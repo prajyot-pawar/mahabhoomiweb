@@ -44,8 +44,8 @@ class _home_pageState extends State<home_page> {
                       width: 1000,
                       height: 1000,
                       child: SvgPicture.asset(
-                        'assets/in.svg',
-                        //color: Color.fromARGB(255, 255, 169, 98),
+                        '/map.svg',
+                        color: Color.fromARGB(255, 10, 33, 125),
                         height: 20.0,
                         width: 20.0,
                         allowDrawingOutsideViewBox: true,

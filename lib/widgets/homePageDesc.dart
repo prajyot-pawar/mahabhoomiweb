@@ -63,7 +63,7 @@ Registration ''',
             GestureDetector(
               onTap: () {
                 launchUrl(
-                    "https://github.com/spandu500/land-property-blockchain");
+                    "https://github.com/prajyot-pawar");
               },
               child: MouseRegion(
                 onHover: (PointerHoverEvent evt) {

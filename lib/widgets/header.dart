@@ -24,11 +24,11 @@ class HeaderWidget extends StatelessWidget {
           child: IconButton(
             onPressed: () {
               launchUrl(
-                  "https://github.com/spandu500/land-property-blockchain");
+                  "https://github.com/prajyot-pawar");
             },
-            iconSize: 30,
+            iconSize: 90,
             icon: Image.asset(
-              'assets/goi.png',
+              '/logo.png',
               //color: Colors.black,
               height: 150,
               width: 150,
@@ -38,14 +38,14 @@ class HeaderWidget extends StatelessWidget {
         ),
         const Text(
           'MahaBhoomi',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
         ),
 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(1.0),
+              padding: const EdgeInsets.all(14.0),
               child: InkWell(
                 child: MouseRegion(
                   onHover: (PointerHoverEvent evt) {
@@ -210,9 +210,9 @@ class HeaderWidget extends StatelessWidget {
                 onPressed: () {
                   launchUrl("https://github.com/prajyot-pawar");
                 },
-                iconSize: 30,
+                iconSize: 90,
                 icon: Image.asset(
-                  'assets/gom.png',
+                  '/gom.jpeg',
                   //color: Colors.black,
                   width: 150.0,
                   height: 150.0,
