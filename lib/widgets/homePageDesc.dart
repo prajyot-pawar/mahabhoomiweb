@@ -13,14 +13,18 @@ class LeftDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double scrWidth=590;
+    double scrHeight=590;
+    scrWidth = MediaQuery.of(context).size.width;
+    scrHeight = MediaQuery.of(context).size.height;
     return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
+
         // title
         const FittedBox(
-          child: Text('''Land
-Registration ''',
+          child: Text('''Land Registration ''',
               style: TextStyle(
                 fontFamily: 'Montserrat',
                 color: Color(0xff28313b),
@@ -32,16 +36,22 @@ Registration ''',
         ),
         // Description
 
-        const SizedBox(
-          height: 20,
-        ),
+        // const SizedBox(
+        //   height,
+        // ),
+        const SizedBox(height: 26),
+
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+
           children: <Widget>[
             // button
             InkWell(
               onTap: () {},
               child: Container(
-                  width: 150,
+                  alignment: Alignment.center,
+                  width: scrWidth*0.2,
                   height: 57,
                   child: const Center(
                     child: Text("Learn More",
@@ -56,7 +66,7 @@ Registration ''',
                   ),
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 71, 84, 201),
-                      borderRadius: BorderRadius.circular(8))),
+                      borderRadius: BorderRadius.circular(10))),
             ),
             //
             const SizedBox(width: 40),

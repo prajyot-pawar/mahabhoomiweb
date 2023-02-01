@@ -1,9 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:mahabhoomiweb/constants/constants.dart';
+// import 'package:mahabhoomiweb/screens/home_page.dart';
+// import 'package:mahabhoomiweb/constants/constants.dart';
 import 'package:universal_html/html.dart' as html;
-import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 import '../constants/utils.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -15,35 +16,51 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    width = MediaQuery.of(context).size.width;
+    if (width > 600) {
+      // width = 590;
+      isDesktop = true;
+    }
+    if (width < 600) {
+      // width = 460;
+      isDesktop = false;
+    }
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         // logo
         Padding(
-          padding: const EdgeInsets.all(1.0),
+          padding: const EdgeInsets.only(left: 2.0),
           child: IconButton(
             onPressed: () {
-              launchUrl(
-                  "https://github.com/spandu500/land-property-blockchain");
+              launchUrl("https://github.com/prajyot-pawar");
             },
-            iconSize: 30,
+            iconSize: 100,
             icon: Image.asset(
-              'assets/goi.png',
+              'assets/logo.png',
               //color: Colors.black,
-              height: 150,
-              width: 150,
-              fit: BoxFit.fitHeight,
+              height: 400,
+              width: 400,
+              fit: BoxFit.fill,
             ),
           ),
         ),
         const Text(
           'MahaBhoomi',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+          style: TextStyle(
+            fontFamily: 'AutourOne',
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+            // letterSpacing: 1.627907,
+          ),
         ),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
+        // const SizedBox(
+        //   width: width/10, //<-- SEE HERE
+        // ),
+        SingleChildScrollView(
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             Padding(
               padding: const EdgeInsets.all(1.0),
               child: InkWell(
@@ -57,7 +74,7 @@ class HeaderWidget extends StatelessWidget {
                   child: const Text(
                     'Home',
                     style: TextStyle(
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Lato',
                       color: Color(0xff28313b),
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
@@ -93,7 +110,7 @@ class HeaderWidget extends StatelessWidget {
                   child: const Text(
                     'User Login',
                     style: TextStyle(
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Lato',
                       color: Color(0xff28313b),
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
@@ -129,7 +146,7 @@ class HeaderWidget extends StatelessWidget {
                   child: const Text(
                     'Officials login',
                     style: TextStyle(
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Lato-bold',
                       color: Color(0xff28313b),
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
@@ -165,7 +182,7 @@ class HeaderWidget extends StatelessWidget {
                   child: const Text(
                     'Govt login',
                     style: TextStyle(
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Lato-black',
                       color: Color(0xff28313b),
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
@@ -193,7 +210,6 @@ class HeaderWidget extends StatelessWidget {
                   child: const Text(
                     'About',
                     style: TextStyle(
-                      fontFamily: 'Montserrat',
                       color: Color(0xff28313b),
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
@@ -205,22 +221,22 @@ class HeaderWidget extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(14.0),
+              padding: const EdgeInsets.only(right: 2.0),
               child: IconButton(
                 onPressed: () {
                   launchUrl("https://github.com/prajyot-pawar");
                 },
-                iconSize: 30,
+                iconSize: 100,
                 icon: Image.asset(
                   'assets/gom.png',
                   //color: Colors.black,
-                  width: 150.0,
-                  height: 150.0,
+                  height: 500,
+                  width: 500,
                   fit: BoxFit.fitHeight,
                 ),
               ),
             ),
-          ],
+          ]),
         )
       ],
     );

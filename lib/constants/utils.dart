@@ -12,8 +12,12 @@ double ethToInr = 0;
 bool connectedWithMetamask =
     false; //1->entered private key ; 2->connected with metamask
 
+// double scrWidth = MediaQuery.of(context).size.width;
+// double scrHeight = MediaQuery.of(context).size.height;
 double width = 590;
+double height = 590;
 bool isDesktop = false;
+// double height = 590;
 String privateKey = "";
 
 class LandInfo {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mahabhoomiweb/screens/home_page.dart';
+import 'package:mahabhoomiweb/screens/my_login_page.dart';
 // import 'package:mahabhoomi_web/screens/user_dashboard.dart';
 // import 'package:mahabhoomi_web/screens/register_screen.dart';
 
@@ -22,19 +23,20 @@ class RouteGenerator {
         return MaterialPageRoute(
             builder: (_) => const home_page(),
             settings: const RouteSettings(name: '/'));
-      // case '/login':
-      //   // Validation of correct data type
-      //   if (args is String) {
-      //     return MaterialPageRoute(
-      //       builder: (_) => CheckPrivateKey(
-      //         val: args,
-      //       ),
-      //       settings: const RouteSettings(name: '/login'),
-      //     );
-      //   }
-      //   return MaterialPageRoute(
-      //       builder: (_) => const home_page(),
-      //       settings: const RouteSettings(name: '/'));
+      case '/login':
+        // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => const my_login_page(),
+            // CheckPrivateKey(
+            //   val: args,
+            // ),
+            settings: const RouteSettings(name: '/login'),
+          );
+        }
+        return MaterialPageRoute(
+            builder: (_) => const my_login_page(),
+            settings: const RouteSettings(name: '/'));
       // case '/user':
       //   return MaterialPageRoute(
       //     builder: (_) => const UserDashBoard(),

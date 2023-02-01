@@ -147,7 +147,7 @@
     },
     {
       "name": "flutter_smart_dialog",
-      "rootUri": "file:///C:/Users/Prajyot/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_smart_dialog-4.8.0",
+      "rootUri": "file:///C:/Users/Prajyot/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_smart_dialog-4.8.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -344,6 +344,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "sizer",
+      "rootUri": "file:///C:/Users/Prajyot/AppData/Local/Pub/Cache/hosted/pub.dev/sizer-2.0.15",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -488,7 +494,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-01-13T14:50:41.679690Z",
+  "generated": "2023-01-24T15:35:44.460789Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-112.0.dev"
 }
