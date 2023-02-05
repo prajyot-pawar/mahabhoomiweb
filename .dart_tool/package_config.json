@@ -104,6 +104,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "eip55",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/eip55-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -176,6 +182,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_web3",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_web3-2.1.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_web_plugins",
       "rootUri": "file:///C:/src/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
@@ -222,6 +234,12 @@
       "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/js-0.6.4",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "json_rpc_2",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/json_rpc_2-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "lints",
@@ -344,6 +362,18 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "random_string",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/random_string-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sec",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/sec-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -464,10 +494,22 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "uuid",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/uuid-3.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/vector_math-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "web3dart",
+      "rootUri": "file:///C:/Users/nanep/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/web3dart-2.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "win32",
@@ -488,7 +530,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-01-17T15:54:32.849977Z",
+  "generated": "2023-02-05T13:30:54.797495Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }

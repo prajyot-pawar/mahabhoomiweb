@@ -14,11 +14,12 @@ class home_page extends StatefulWidget {
 class _home_pageState extends State<home_page> {
   @override
   Widget build(BuildContext context) {
-    width = MediaQuery.of(context).size.width;
-    if (width > 600) {
-      width = 590;
-      isDesktop = true;
-    }
+    Size _size = MediaQuery.of(context).size;
+    // width = MediaQuery.of(context).size.width;
+    // if (width > 600) {
+    //   width = 590;
+    //   isDesktop = true;
+    // }
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -38,17 +39,22 @@ class _home_pageState extends State<home_page> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  const LeftDescription(),
-                  Center(
-                    child: Container(
-                      width: 1000,
-                      height: 1000,
-                      child: SvgPicture.asset(
-                        '/map.svg',
-                        color: Color.fromARGB(255, 10, 33, 125),
-                        height: 20.0,
-                        width: 20.0,
-                        allowDrawingOutsideViewBox: true,
+                  Expanded(
+                    flex: _size.width > 1230 ? 2 : 4,
+                    child: const LeftDescription()),
+                  Expanded(
+                    flex: _size.width > 1230 ? 3 : 5,
+                    child: Center(
+                      child: Container(
+                        width: 1000,
+                        height: 1000,
+                        child: SvgPicture.asset(
+                          '/map.svg',
+                          color: Color.fromARGB(255, 10, 33, 125),
+                          height: 20.0,
+                          width: 20.0,
+                          allowDrawingOutsideViewBox: true,
+                        ),
                       ),
                     ),
                   )

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mahabhoomiweb/screens/home_page.dart';
 // import 'package:mahabhoomi_web/screens/user_dashboard.dart';
-// import 'package:mahabhoomi_web/screens/register_screen.dart';
+import '../screens/registerUser.dart';
+import '../screens/login_page.dart';
 
 class RoutesName {
   // ignore: constant_identifier_names
@@ -22,29 +23,29 @@ class RouteGenerator {
         return MaterialPageRoute(
             builder: (_) => const home_page(),
             settings: const RouteSettings(name: '/'));
-      // case '/login':
-      //   // Validation of correct data type
-      //   if (args is String) {
-      //     return MaterialPageRoute(
-      //       builder: (_) => CheckPrivateKey(
-      //         val: args,
-      //       ),
-      //       settings: const RouteSettings(name: '/login'),
-      //     );
-      //   }
-      //   return MaterialPageRoute(
-      //       builder: (_) => const home_page(),
-      //       settings: const RouteSettings(name: '/'));
+      case '/login':
+        // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => CheckPrivateKey(
+              val: args,
+            ),
+            settings: const RouteSettings(name: '/login'),
+          );
+        }
+        return MaterialPageRoute(
+            builder: (_) => const home_page(),
+            settings: const RouteSettings(name: '/'));
       // case '/user':
       //   return MaterialPageRoute(
       //     builder: (_) => const UserDashBoard(),
       //     settings: const RouteSettings(name: '/user'),
       //   );
-      // case '/registeruser':
-      //   return MaterialPageRoute(
-      //     builder: (_) => const RegisterUser(),
-      //     settings: const RouteSettings(name: '/registeruser'),
-      //   );
+      case '/registeruser':
+        return MaterialPageRoute(
+          builder: (_) => const RegisterUser(),
+          settings: const RouteSettings(name: '/registeruser'),
+        );
       // case '/contractowner':
       //   return MaterialPageRoute(
       //     builder: (_) => const AddLandInspector(),
